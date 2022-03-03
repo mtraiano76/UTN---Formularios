@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="POST">
+        <label for="nombre">NOMBRE</label>
+        <input type="text" id="nombre">
+    </form>
+
+    <form action="POST">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email">
+        <button type="submit">Click</button>
+    </form>
+
+    <form action="POST">
+        <label for="password">Ingrese Password</label>
+        <input type="password" id="password">
+        <button type="submit">Click</button>
+    </form>
+
+    <form action="POST">
+        <label for="TurnoCursada">Seleccione el turno de cursada</label>
+
+        <label for="TurnoTarde" name="TurnoCursada">
+            Turno Tarde 
+            <input type="radio" id="TurnoTarde" name="TurnoCursada" value="TTarde">
+        </label>
+        <label for="TurnoNoche">
+            Turno Noche 
+            <input type="radio" id="TurnoNoche" name="TurnoCursada" value="TNoche">
+        </label>
+    </form>
+    <form action="POST">
+        <label for="Cursos">Seleccione en que cursos se anoto</label>
+
+        <label for="HTMLyCSS" name="Cursos">
+            HTML y CSS3
+            <input type="checkbox" id="TurnoNoche" name="Cursos" value="JavaScript">
+        </label>
+
+        <label for="Bootstrap">
+            <input type="checkbox" id="Bootstrap" name="Cursos" value="Bootstrap">
+        </label>
+
+    </form>
+
+    <form action="POST">
+        <label for="comentarios">Escriba su comentario</label>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea> <!-- cols y rows es el tamaño del cuadro de comentarios -->
+    </form>
+    <form action="POST">
+        <label for="comentarios">Escriba su mensaje</label>
+        <textarea name="comentarios" id="comentarios" minlength="20"></textarea> <!-- minlength le damos el minimo de letras (20) -->
+    </form>
+
+    <form action="POST">
+        <label for="comentarios">Escriba su mensaje</label>
+        <textarea name="comentarios" id="comentarios" maxlength="50"></textarea> <!-- maxlength le damos el maximo de letras (50) -->
+    </form>
+
+    <video src="./video/pexels-ivan-photo-10622156.mp4" width="300px" controls> <!-- con controls aparecen los botones del video / width le damos el ancho en la pantalla -->
+        <source src="./video/pexels-ivan-photo-10622156.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+    </video>
+
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+</body>
+</html>
